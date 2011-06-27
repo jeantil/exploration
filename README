@@ -1,0 +1,8 @@
+Reproducing the environment for a maven-eclipse-plugin bug
+
+A parent pom you don't control (corporate mandated pom) defines the addVersionToProjectName in the pluginManagement section. 
+You don't want that behaviour and try to override it in your own pom
+The project name is correctly generated, but the .classpath file keeps the version added, breaking the workspace.
+
+Looking more closely it seems this bug was hit before : 
+http://jira.codehaus.org/browse/MECLIPSE-681

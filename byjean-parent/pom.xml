@@ -12,20 +12,10 @@
 					<artifactId>maven-eclipse-plugin</artifactId>
 					<version>2.8</version>
 					<configuration>
-						<addVersionToName>true</addVersionToName>
+						<addVersionToProjectName>true</addVersionToProjectName>
 					</configuration>			
 				</plugin>
 			</plugins>
-		</pluginManagement>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-eclipse-plugin</artifactId>
-				<version>2.8</version>
-				<configuration>
-					<addVersionToName>true</addVersionToName>
-				</configuration>			
-			</plugin>
-		</plugins>		
+		</pluginManagement>			
 	</build>
 </project>
